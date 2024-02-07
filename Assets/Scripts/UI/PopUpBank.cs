@@ -10,9 +10,11 @@ public class PopUpBank : MonoBehaviour
     [SerializeField] private Text cash;
     [SerializeField] private GameObject popupError;
 
+
     private void Start()
     {
         Refresh();
+
     }
     
     public void Deposit(int money)
@@ -50,5 +52,6 @@ public class PopUpBank : MonoBehaviour
         userName.text = GameManager.Instance.User.Name;
         balance.text = GameManager.Instance.User.Balance.ToString();
         cash.text = GameManager.Instance.User.Cash.ToString();
+     
     }
 }

@@ -10,12 +10,16 @@ public class UserData
     public int Balance;
     public int Cash;
 
+    
+
     public UserData(string name,int balance,int cash)
     {
         Name = name;
         Balance = balance;
         Cash = cash;
-        
+
+       
+
     }
 
     public bool Deposit(int money)
